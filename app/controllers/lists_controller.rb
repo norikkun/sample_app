@@ -6,7 +6,8 @@ class ListsController < ApplicationController
   def create
     list = List.new(list_params)
     list.save
-    redirect_to list_path(list.id)
+    redirect_to '/top'
+    
   end
 
   def index
